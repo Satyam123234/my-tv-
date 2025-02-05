@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Connect with a TV</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="text-center mb-8 fade-in">
+      <h1 class="text-3xl font-semibold text-blue-400 mb-2">How to Connect with a TV</h1>
+      <p class="text-gray-400">A simple guide to connect your devices to a TV.</p>
+    </header>
+
+    <!-- HDMI Section -->
+    <section class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 fade-in">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-400">1. Using HDMI</h2>
+      <p class="mb-4">Connect your device to the TV using an HDMI cable.</p>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Plug one end of the HDMI cable into your device (laptop, gaming console, etc.).</li>
+        <li>Plug the other end into the HDMI port on your TV.</li>
+        <li>Switch the TV input to the correct HDMI source.</li>
+      </ol>
+    </section>
+
+    <!-- Chromecast Section -->
+    <section class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 fade-in">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-400">2. Using Chromecast</h2>
+      <p class="mb-4">Stream content wirelessly using Google Chromecast.</p>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Connect the Chromecast device to your TV's HDMI port.</li>
+        <li>Set up the Chromecast using the Google Home app on your phone or tablet.</li>
+        <li>Cast content from your device to the TV.</li>
+      </ol>
+    </section>
+
+    <!-- Screen Mirroring Section -->
+    <section class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 fade-in">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-400">3. Using Screen Mirroring</h2>
+      <p class="mb-4">Mirror your device's screen to the TV wirelessly.</p>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Ensure both your device and TV support screen mirroring (e.g., Miracast, AirPlay).</li>
+        <li>Enable screen mirroring on your TV.</li>
+        <li>Connect your device to the TV using the screen mirroring feature.</li>
+      </ol>
+    </section>
+
+    <!-- OTT Section -->
+    <section class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 fade-in">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-400">4. Using OTT Platforms</h2>
+      <p class="mb-4">Connect and stream content from OTT platforms like Netflix, Hulu, or Amazon Prime Video.</p>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Ensure your TV is connected to the internet (via Wi-Fi or Ethernet).</li>
+        <li>Download the OTT app from your TV's app store (e.g., Google Play Store, LG Content Store, or Samsung Smart Hub).</li>
+        <li>Sign in to your OTT account or create a new one if you don't have an account.</li>
+        <li>Browse and stream your favorite shows and movies.</li>
+      </ol>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-400 mt-8 fade-in">
+      <p>This guide is for educational purposes only. No copyrighted material is used.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Add fade-in animation to sections on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.fade-in');
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.style.opacity = '1';
+        }, index * 200); // Staggered animation
+      });
+    });
+  </script>
+</body>
+</html>
