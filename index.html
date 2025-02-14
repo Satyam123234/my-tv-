@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a Device</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen h-[80vh] px-4">
+
+    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-4">Register a Device</h1>
+
+        <div class="text-center">
+            <!-- Single line text without hiding or overflow issues -->
+            <button class="bg-blue-500 text-white text-sm px-4 py-2 rounded-md w-full mb-4 break-words">
+                Register your compatible TV or device
+            </button>
+            <p class="text-gray-600 text-sm mb-4 break-words">
+                Enter the code shown on your TV or device to register it with your account.
+            </p>
+        </div>
+
+        <form id="registerForm" class="space-y-4">
+            <label for="code" class="block text-sm font-medium text-gray-700">Registration Code:</label>
+            <input type="text" id="code" class="w-full border px-3 py-2 rounded-md text-center" placeholder="eg: QWVB6DG" required>
+
+            <!-- Submit Button (छोटा और सेंटर में) -->
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md text-sm">Submit</button>
+            </div>
+        </form>
+
+        <div class="mt-6">
+            <h2 class="text-lg font-semibold">Where’s My Registration Code?</h2>
+            <ul class="text-gray-700 text-sm mt-2 space-y-2">
+                <li>Open the Video app on your TV or device.</li>
+                <li>Select "Register on the website."</li>
+                <li>Your registration code appears on the left of the screen.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const code = document.getElementById("code").value;
+            if(code.trim() === "") {
+                alert("Please enter a registration code.");
+            } else {
+                alert(`Your device with code "${code}" has been registered.`);
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+  
