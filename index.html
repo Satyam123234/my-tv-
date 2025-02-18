@@ -76,4 +76,51 @@
         }
         .steps {
             margin-top: 20px;
-            text-align: left
+            text-align: left;
+            color: #333;
+            width: 100%;
+        }
+        .steps h3 {
+            font-size: 16px;
+            color: #007bff;
+        }
+        .steps ul {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Your Device</h1>
+        <p class="instructions">Register your compatible TV or devices</p>
+        <p class="instructions">Enter the code shown on your device to register it with your account</p>
+        
+        <div class="code-input">
+            <input type="text" placeholder="eg: QV36DG">
+        </div>
+        <div class="register-button">
+            <button id="registerButton">Register</button>
+        </div>
+
+        <div class="steps">
+            <h3>Steps to Register Your Device</h3>
+            <ul>
+                <li>Step 1: Open the app on your TV or device.</li>
+                <li>Step 2: Select "Register on the website."</li>
+                <li>Step 3: Your registration code appears on the left of the screen.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("registerButton").addEventListener("click", function () {
+            // Redirect to the second page
+            window.location.href = "index2.html";
+        });
+    </script>
+</body>
+</html>
