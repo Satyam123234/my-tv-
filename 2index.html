@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Activation & Troubleshooting Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Optional custom styles */
+        .tip:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">TV Activation & Troubleshooting Tips</h1>
+            <p class="mt-2">Your guide to setting up and fixing common TV issues</p>
+        </div>
+    </header>
+
+    <!-- Activation Steps Section -->
+    <section class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">TV Activation Steps</h2>
+        <div class="space-y-4">
+            <div class="p-4 bg-blue-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Step 1: Unbox Your TV</h3>
+                <p class="mt-2">Carefully unbox your TV and remove all packaging materials.</p>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Step 2: Connect to Power</h3>
+                <p class="mt-2">Plug your TV into a power outlet and turn it on.</p>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Step 3: Connect to Wi-Fi</h3>
+                <p class="mt-2">Go to the settings menu and connect your TV to your Wi-Fi network.</p>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Step 4: Activate Your TV</h3>
+                <p class="mt-2">Follow the on-screen instructions to activate your TV.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting Tips Section -->
+    <section class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Troubleshooting Tips</h2>
+        <div class="space-y-4">
+            <div class="p-4 bg-red-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">No Power</h3>
+                <p class="mt-2">Ensure the power cord is securely plugged in and the outlet is working.</p>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">No Signal</h3>
+                <p class="mt-2">Check all cable connections and ensure the correct input source is selected.</p>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Poor Picture Quality</h3>
+                <p class="mt-2">Adjust the picture settings and ensure your TV is receiving a strong signal.</p>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg tip">
+                <h3 class="text-xl font-medium">Sound Issues</h3>
+                <p class="mt-2">Check the audio settings and ensure the volume is not muted.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 TV Activation & Troubleshooting Tips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tips = document.querySelectorAll('.tip');
+
+            tips.forEach(tip => {
+                tip.addEventListener('click', () => {
+                    tip.classList.toggle('bg-blue-100');
+                    tip.classList.toggle('bg-red-100');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

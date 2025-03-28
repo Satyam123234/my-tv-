@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Activation & Troubleshooting Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations and hover effects */
+        .tip {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tip:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">TV Activation & Troubleshooting Tips</h1>
+            <p class="text-lg md:text-xl">Your ultimate guide to setting up and fixing common TV issues</p>
+        </div>
+    </header>
+
+    <!-- Activation Steps Section -->
+    <section class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 fade-in">TV Activation Steps</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-blue-600 text-2xl font-bold mb-4">1</div>
+                <h3 class="text-xl font-semibold mb-2">Unbox Your TV</h3>
+                <p class="text-gray-600">Carefully unbox your TV and remove all packaging materials.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-blue-600 text-2xl font-bold mb-4">2</div>
+                <h3 class="text-xl font-semibold mb-2">Connect to Power</h3>
+                <p class="text-gray-600">Plug your TV into a power outlet and turn it on.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-blue-600 text-2xl font-bold mb-4">3</div>
+                <h3 class="text-xl font-semibold mb-2">Connect to Wi-Fi</h3>
+                <p class="text-gray-600">Go to the settings menu and connect your TV to your Wi-Fi network.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-blue-600 text-2xl font-bold mb-4">4</div>
+                <h3 class="text-xl font-semibold mb-2">Activate Your TV</h3>
+                <p class="text-gray-600">Follow the on-screen instructions to activate your TV.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting Tips Section -->
+    <section class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 fade-in">Troubleshooting Tips</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Tip 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-red-600 text-2xl font-bold mb-4">!</div>
+                <h3 class="text-xl font-semibold mb-2">No Power</h3>
+                <p class="text-gray-600">Ensure the power cord is securely plugged in and the outlet is working.</p>
+            </div>
+            <!-- Tip 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-red-600 text-2xl font-bold mb-4">!</div>
+                <h3 class="text-xl font-semibold mb-2">No Signal</h3>
+                <p class="text-gray-600">Check all cable connections and ensure the correct input source is selected.</p>
+            </div>
+            <!-- Tip 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-red-600 text-2xl font-bold mb-4">!</div>
+                <h3 class="text-xl font-semibold mb-2">Poor Picture Quality</h3>
+                <p class="text-gray-600">Adjust the picture settings and ensure your TV is receiving a strong signal.</p>
+            </div>
+            <!-- Tip 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md tip fade-in">
+                <div class="text-red-600 text-2xl font-bold mb-4">!</div>
+                <h3 class="text-xl font-semibold mb-2">Sound Issues</h3>
+                <p class="text-gray-600">Check the audio settings and ensure the volume is not muted.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2023 TV Activation & Troubleshooting Tips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation to all elements with the class 'fade-in'
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                }, index * 200); // Staggered delay for each element
+            });
+        });
+    </script>
+</body>
+</html>
